@@ -27,3 +27,23 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
+const liArr = images.map((el) => {
+  const navItemEl = document.createElement("li");
+  navItemEl.classList.add("item");
+  const imageEl = document.createElement("img");
+  imageEl.src = el.url;
+  imageEl.alt = el.alt;
+  navItemEl.append(imageEl);
+  return navItemEl;
+});
+
+const navEl = document.querySelector("ul")
+navEl.append(...liArr);
+
+// Використовуй масив об'єктів images для створення елементів <img>, вкладених в <li>.
+
+// Ти можеш створити й додати HTML-елементи, використовуючи document.createElement() і elem.append() або шаблонні рядки і elem.insertAdjacentHTML().
+
+// Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
+// Додай мінімальне оформлення галереї флексбоксами через CSS класи.
