@@ -29,3 +29,17 @@ img {
   width: 1440px;
 }
 
+#controls{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 486px;
+  height: 104px;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
