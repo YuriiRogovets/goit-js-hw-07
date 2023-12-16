@@ -17,8 +17,6 @@ createBtn.addEventListener(`click`, (event) => {
     amount = input.value;
     createBoxes(amount);
     input.value = ``;
-  } else {
-    return alert (`the number is incorrect`);
   }
 });
 
