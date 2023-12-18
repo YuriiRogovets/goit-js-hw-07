@@ -38,7 +38,7 @@ const liArr = images.map((el) => {
   return navItemEl;
 });
 
-const navEl = document.querySelector("ul")
+const navEl = document.querySelector(".gallery");
 navEl.append(...liArr);
 
 // Використовуй масив об'єктів images для створення елементів <img>, вкладених в <li>.
